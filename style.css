@@ -1,0 +1,211 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    height: 100px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 50px 134px 50px 134px;
+}
+
+header img {
+    width: 56px;
+    height: 50px;
+    margin-right: 200px;
+}
+
+header nav {
+    margin-right: 180px;
+}
+
+#home_li {
+    color: #9A93FF;
+
+}
+
+ul,
+li,
+#home_li {
+    list-style: none;
+    display: flex;
+    padding: 10px;
+    font-family: Dosis;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 17px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+button {
+    height: 60px;
+    border: none;
+    padding: 16px 50px;
+    text-align: center;
+    color: var(--Pure-white, #FFF);
+    font-family: Dosis;
+    font-size: 18px;
+    font-style: normal;
+    line-height: normal;
+    border-radius: 999px;
+    background-color: #ADA7FF;
+}
+
+@media (max-width: 780px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header img {
+        margin-bottom: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+}
+
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    height: 100vh;
+    margin: 60px 134px 28px 135px;
+}
+
+
+.content-page {
+    position: absolute;
+    margin-right: 0;
+    z-index: 99;
+}
+
+
+.pets {
+    position: absolute;
+    right: 0;
+    top: 0;
+    max-width: 450px;
+}
+
+h1 {
+    color: var(--Heading-Color, #302B3A);
+    font-family: Dosis;
+    font-size: 69px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.purple {
+    color: var(--Buttton-Color, #ADA7FF);
+    font-family: Dosis;
+    font-size: 69px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.content-page p {
+    color: #404040;
+    font-family: Dosis;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 60px;
+    width: 625px;
+}
+
+.buttons {
+    display: inline-flex;
+    flex-direction: row;
+    margin-bottom: 60px;
+
+}
+
+#adopt-now {
+    color: var(--Pure-white, #FFF);
+    font-family: Dosis;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border: none;
+    border-radius: 999px;
+    background: #ADA7FF;
+    height: 50px;
+    border: none;
+    padding: 16px 50px;
+    color: var(--Pure-white, #FFF);
+    font-family: Dosis;
+    font-size: 18px;
+    font-style: normal;
+    line-height: normal;
+    border-radius: 999px;
+    margin-right: 30px;
+}
+
+#adopt-now img {
+    width: 17.076px;
+    height: 19.046px;
+    transform: rotate(18.046deg);
+}
+
+#watch-now {
+    padding-left: 0;
+    font-family: Dosis;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    height: 50px;
+    border: none;
+    color: var(--Buttton-Color, #ADA7FF);
+    background-color: transparent;
+    line-height: normal;
+}
+
+#watch-now img {
+    width: 55px;
+    height: 55px;
+}
+
+.statistics {
+    display: flex;
+    justify-content: start;
+    font-family: Dosis;
+    font-size: 43px;
+    font-style: normal;
+    font-weight: 650;
+    line-height: normal;
+
+
+
+}
+
+.statistics div {
+    justify-content: flex-start;
+    width: 200px;
+}
+
+@media (max-width: 780px) {
+    .content-page {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
